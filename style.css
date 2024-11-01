@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: #e0e0e0;
+    
+}
+section {
+    width: 100%;
+    max-width: 1555px;
+    margin: 0;
+    padding: 0rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    font-size: medium;
+    padding: 2rem;
+    background-color:rgb(183, 206, 235);
+    width: 100%;
+    line-height: normal;
+    position:fixed;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#Home {
+    background-image: url("backgroundpic.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the entire content horizontally */
+    
+
+}
+
+#Home .intro-text{
+    font-size:larger;
+    text-align:center;
+    font-weight:300;
+    margin-bottom: 30px;
+    color: #3a1584;
+    font-style: oblique;
+}
+
+#Home .social-icon{
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center vertically */
+    gap: 35px;
+    transition: transform 0.3s;
+    margin-bottom: 90px;
+
+}
+
+#Home .social-icon{
+    width: 50px;
+    height: 50px;
+}
+
+#Home .name-title {
+    font-size: x-large;
+    height: max-content;
+    font-family: 'Baloo 2', sans-serif; /* Use the Google Font */
+    text-align: center;
+    font-family: fantasy;
+    padding: 100px;
+    margin-bottom: 50px;
+    color: #3a1584; /* Light purple color */
+}
+#contact {
+    background-color: #e0e0e0;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    text-align: center;
+}
+
+#contact .contact-text {
+    padding: 20px;
+    margin-top: 20px;
+    gap: 40px;
+    color: #3a1584;
+    
+
+}
+
+.contact-title {
+    color: #383539; /* Purple color for "Contact" */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+
+
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 0px;
+    background-color: rgb(248, 246, 244);
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.text-column {
+    flex: 1.5; /* Adjusts the width */
+    margin-right: 20px; /* Space between columns */
+    font-size: medium;
+    font-stretch: semi-condensed;
+    font-family: fantasy;
+}
+
+.skills-column {
+    flex: 1; /* Adjusts the width */
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    background-color: #3a1584; /* Skill color */
+    height: 100%;
+    transition: width 0.3s; /* Smooth transition */
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#Experience {
+    display:center;
+    padding: 40px;
+    margin-top: 0px;
+    background-color: rgb(248, 246, 244);
+
+}
+
+#Experience .name-title{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 20px;
+}
+
+/* General timeline container styling */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px 0;
+}
+
+/* Vertical line styling */
+.timeline-line {
+    position: absolute;
+    left: 0%; /* Positions line at 20% of container width */
+    top: 0;
+    bottom: 0;
+    width: 4px; /* Thickness of the line */
+    background-color: #7c59c0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Individual entry styling */
+.entry {
+    position:relative;
+    margin: 10px 0;
+    padding-left: 1%; /* Space on the left for the line and circles */
+}
+
+/* Circle styling */
+.circle {
+    position: absolute;
+    left: 0%; /* Aligns circles with the vertical line */
+    transform: translateX(-50%);
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #3a1584;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+/* Card styling */
+.card {
+    position: relative;
+    padding: 50px;
+    width: 650px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 10%; /* Shifts cards to the right of the line */
+    z-index: 3;
+    margin-bottom: 10%;
+}
+
+/* Additional card styling */
+.card h3 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card p, .card span {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
